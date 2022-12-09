@@ -2,10 +2,11 @@
 const route = require('express').Router();
 
 //import user handelers
-const { userCreate } = require('../controllers')
+const { userCreate, loginUser } = require('../../controllers')
 
 
 route.post('/register', userCreate );
+route.post('/login', loginUser );
 
 
 //exports user routes
